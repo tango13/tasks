@@ -7,9 +7,9 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    style="@style/Content">
+    android:background="@android:color/black">
 
-  <com.todoroo.astrid.ui.ErrorCatchingListView android:id="@android:id/list"
+  <ListView android:id="@android:id/list"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"/>
         

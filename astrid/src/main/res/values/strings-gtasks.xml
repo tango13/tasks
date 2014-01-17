@@ -34,9 +34,7 @@
         
     <!-- ============================================ GtasksLoginActivity == -->
     
-    <!-- Activity Title: Gtasks Login -->    
-
-    <string name="gtasks_GLA_noaccounts">No available Google accounts to sync with.</string>
+    <!-- Activity Title: Gtasks Login -->
 
     <!-- Sign In Button -->    
 

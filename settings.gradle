@@ -1,3 +1,1 @@
-include ':android-aac-enc'
-include ':api'
-include ':astrid'
+include ':android-aac-enc', ':google-tasks', ':api', ':astrid'
