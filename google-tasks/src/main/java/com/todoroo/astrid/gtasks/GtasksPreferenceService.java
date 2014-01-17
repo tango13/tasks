@@ -1,20 +1,9 @@
-/**
- * Copyright (c) 2012 Todoroo Inc
- *
- * See the file "LICENSE" for the full license governing this code.
- */
 package com.todoroo.astrid.gtasks;
 
 import com.todoroo.astrid.sync.SyncProviderUtilities;
 
-import org.tasks.R;
+import org.tasks.googletasks.R;
 
-/**
- * Methods for working with GTasks preferences
- *
- * @author timsu
- *
- */
 public class GtasksPreferenceService extends SyncProviderUtilities {
 
     /** add-on identifier */

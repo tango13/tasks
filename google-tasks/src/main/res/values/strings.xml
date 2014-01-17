@@ -1,6 +1,7 @@
 <resources>
+
     <string name="gtasks_GLA_noaccounts">No available Google accounts to sync with.</string>
 
     <string name="DLG_ok">OK</string>
-    <string name="app_name">Google Tasks</string>
+
 </resources>

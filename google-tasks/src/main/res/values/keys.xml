@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="gtasks_GPr_interval_key">gtasks_sync_freq</string>
+
+</resources>
