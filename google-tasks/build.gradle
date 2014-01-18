@@ -1,15 +1,23 @@
 buildscript {
     repositories {
         mavenCentral()
+        maven {
+            url 'https://oss.sonatype.org/content/repositories/snapshots/'
+        }
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:0.7.+'
+        classpath 'com.squareup.gradle:gradle-android-test-plugin:0.9.1-SNAPSHOT'
     }
 }
 apply plugin: 'android-library'
+apply plugin: 'android-test'
 
 repositories {
     mavenCentral()
+    maven {
+        url 'https://oss.sonatype.org/content/repositories/snapshots/'
+    }
 }
 
 android {
@@ -51,4 +59,12 @@ dependencies {
     compile group: 'com.google.http-client', name: 'google-http-client-extensions-android3', version: '1.6.0-beta', transitive: false
     compile group: 'com.google.oauth-client', name: 'google-oauth-client', version: '1.6.0-beta', transitive: false
     compile group: 'com.google.oauth-client', name: 'google-oauth-client-extensions', version: '1.6.0-beta', transitive: false
+
+    testCompile group: 'junit', name: 'junit', version: '4.10'
+    testCompile group: 'org.robolectric', name: 'robolectric', version: '2.3-SNAPSHOT'
+    testCompile group: 'org.mockito', name: 'mockito-all', version: '1.9.5'
+    // hack to get android studio to import libraries
+    instrumentTestCompile group: 'junit', name: 'junit', version: '4.10', transitive: false
+    instrumentTestCompile group: 'org.robolectric', name: 'robolectric', version: '2.3-SNAPSHOT', transitive: false
+    instrumentTestCompile group: 'org.mockito', name: 'mockito-core', version: '1.9.5', transitive: false
 }
