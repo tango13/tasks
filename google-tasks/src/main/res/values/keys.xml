@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <string name="gapi_key">AIzaSyBXGYNWNQcfse4JS5gI9teTSKMzinWzL2M</string>
+
     <string name="gtasks_GPr_interval_key">gtasks_sync_freq</string>
 
 </resources>

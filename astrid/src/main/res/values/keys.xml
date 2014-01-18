@@ -5,8 +5,6 @@
 -->
 <resources>
 
-    <string name="gapi_key">AIzaSyBXGYNWNQcfse4JS5gI9teTSKMzinWzL2M</string>
-
   <!-- ======================================================== REMINDERS == -->
 
   <!-- whether reminders should appear at all -->

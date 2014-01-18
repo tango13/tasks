@@ -20,7 +20,7 @@ import com.todoroo.astrid.gtasks.GtasksPreferenceService;
 import com.todoroo.astrid.gtasks.api.GoogleTasksException;
 import com.todoroo.astrid.gtasks.api.GtasksInvoker;
 
-import org.tasks.R;
+import org.tasks.googletasks.R;
 
 import java.io.IOException;
 
@@ -61,7 +61,6 @@ public class GtasksTokenValidator {
                 return token;
             }
         }
-
 
         throw new GoogleTasksException(c.getString(R.string.gtasks_error_authRefresh), "auth-token-refresh");
     }

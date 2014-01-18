@@ -20,7 +20,7 @@ import com.todoroo.andlib.service.DependencyInjectionService;
 import com.todoroo.andlib.service.ExceptionService;
 import com.todoroo.astrid.gtasks.auth.GtasksTokenValidator;
 
-import org.tasks.R;
+import org.tasks.googletasks.R;
 
 import java.io.IOException;
 

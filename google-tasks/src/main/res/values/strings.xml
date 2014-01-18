@@ -4,4 +4,14 @@
 
     <string name="DLG_ok">OK</string>
 
+    <string name="gtasks_error_accountManager">Error in your phone\'s account manager. Please log out and log back in from the Google Tasks settings.</string>
+
+    <string name="gtasks_error_background_sync_auth">Error authenticating in background. Please try initiating a sync while Tasks is running.</string>
+
+    <string name="gtasks_error_authRefresh">Unable to authenticate with Google Tasks. Please check your account password or try again later.</string>
+
+    <string name="gtasks_error_accountNotFound">Account %s not found--please log out and log back in from the Google Tasks settings.</string>
+
+    <string name="gtasks_error_backend">Google\'s Task API is in beta and has encountered an error. The service may be down, please try again later.</string>
+
 </resources>
