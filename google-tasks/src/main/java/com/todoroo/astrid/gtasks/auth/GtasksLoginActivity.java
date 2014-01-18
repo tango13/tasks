@@ -14,6 +14,7 @@ import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.util.TypedValue;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.Window;
@@ -30,9 +31,8 @@ import com.todoroo.andlib.utility.DialogUtilities;
 import com.todoroo.andlib.utility.Preferences;
 import com.todoroo.astrid.gtasks.GtasksPreferenceService;
 import com.todoroo.astrid.gtasks.api.GtasksInvoker;
-import com.todoroo.astrid.service.AstridDependencyInjector;
 
-import org.tasks.R;
+import org.tasks.googletasks.R;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -47,7 +47,8 @@ import java.util.concurrent.TimeUnit;
  */
 public class GtasksLoginActivity extends ListActivity {
 
-    @Autowired private GtasksPreferenceService gtasksPreferenceService;
+    @Autowired
+    private GtasksPreferenceService gtasksPreferenceService;
 
     // --- ui initialization
 
@@ -56,10 +57,6 @@ public class GtasksLoginActivity extends ListActivity {
 
     private String authToken;
     private String accountName;
-
-    static {
-        AstridDependencyInjector.initialize();
-    }
 
     public GtasksLoginActivity() {
         super();
@@ -76,7 +73,7 @@ public class GtasksLoginActivity extends ListActivity {
         setContentView(R.layout.gtasks_login_activity);
         TextView header = new TextView(this);
         header.setText(R.string.actfm_GAA_title);
-        header.setTextAppearance(this, R.style.TextAppearance_Medium);
+        header.setTextSize(TypedValue.COMPLEX_UNIT_SP, 18);
         header.setPadding(10, 0, 10, 50);
         getListView().addHeaderView(header);
 

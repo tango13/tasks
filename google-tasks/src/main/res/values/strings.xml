@@ -14,4 +14,12 @@
 
     <string name="gtasks_error_backend">Google\'s Task API is in beta and has encountered an error. The service may be down, please try again later.</string>
 
+    <string name="gtasks_GLA_authenticating">Authenticating...</string>
+
+    <string name="actfm_GAA_title">Select the Google account you want to use:</string>
+
+    <string name="gtasks_GLA_errorIOAuth">Sorry, we had trouble communicating with Google servers. Please try again later.</string>
+
+    <string name="gtasks_GLA_errorAuth">Error authenticating! Please check your username and password in your phone\'s account manager</string>
+
 </resources>

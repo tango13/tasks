@@ -31,30 +31,7 @@
     
     <!-- Label for clear completed menu item -->
     <string name="gtasks_GTA_clear_completed">Clear Completed</string>
-        
-    <!-- ============================================ GtasksLoginActivity == -->
-    
-    <!-- Activity Title: Gtasks Login -->
 
-    <!-- Sign In Button -->    
-
-    <!-- E-mail Address Label -->    
-
-    <!-- Password Label -->    
-    
-    <!--  Authenticating toast -->
-    <string name="gtasks_GLA_authenticating">Authenticating...</string>
-    
-    <!-- Google Apps for Domain checkbox -->
-
-    <!-- Error Message when fields aren't filled out -->    
-
-    <!-- Error Message when we receive a HTTP 401 Unauthorized -->    
-    <string name="gtasks_GLA_errorAuth">Error authenticating! Please check your username and password in your phone\'s account manager</string>
-
-    <!-- Error Message when we receive an IO Exception -->    
-    <string name="gtasks_GLA_errorIOAuth">Sorry, we had trouble communicating with Google servers. Please try again later.</string>
-    
     <!-- ============================================== GtasksPreferences == -->
 
     <!-- GTasks Preferences Title -->    
