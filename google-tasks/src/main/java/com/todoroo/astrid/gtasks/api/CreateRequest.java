@@ -13,25 +13,23 @@ import java.io.IOException;
  * @author Sam Bosley
  *
  */
-public class CreateRequest extends PushRequest {
+public class CreateRequest {
 
+    private final GtasksInvoker service;
+    private final String listId;
+    private final Task toUpdate;
     private String parent;
     private String priorSiblingId;
 
     public CreateRequest(GtasksInvoker service, String listId, Task toUpdate, String parent, String priorSiblingId) {
-        super(service, listId, toUpdate);
+        this.service = service;
+        this.listId = listId;
+        this.toUpdate = toUpdate;
         this.parent = parent;
         this.priorSiblingId  = priorSiblingId;
     }
 
-    @Override
     public Task executePush() throws IOException {
-        return service.createGtask(listId, toPush, parent, priorSiblingId);
-    }
-
-    @Override
-    protected void recover() {
-        parent = null;
-        priorSiblingId = null;
+        return service.createGtask(listId, toUpdate, parent, priorSiblingId);
     }
 }

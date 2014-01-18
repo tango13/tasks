@@ -13,25 +13,35 @@ import java.io.IOException;
  * @author Sam Bosley
  *
  */
-public class MoveRequest extends PushRequest {
+public class MoveRequest {
 
+    private final GtasksInvoker service;
     private String taskId;
+    private final String destinationList;
     private String parentId;
     private String priorSiblingId;
 
     public MoveRequest(GtasksInvoker service, String taskId, String destinationList, String parentId, String priorSiblingId) {
-        super(service, destinationList, null);
+        this.service = service;
         this.taskId = taskId;
+        this.destinationList = destinationList;
         this.parentId = parentId;
         this.priorSiblingId = priorSiblingId;
     }
 
-    @Override
-    public Task executePush() throws IOException {
-        return service.moveGtask(super.listId, taskId, parentId, priorSiblingId);
+    public Task push() throws IOException {
+        try {
+            return executePush();
+        } catch (IOException e) {
+            recover();
+            return executePush();
+        }
     }
 
-    @Override
+    public Task executePush() throws IOException {
+        return service.moveGtask(destinationList, taskId, parentId, priorSiblingId);
+    }
+
     protected void recover() {
         parentId = null;
         priorSiblingId = null;
