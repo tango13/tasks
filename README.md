@@ -5,5 +5,3 @@ Visit the wiki to [get started with development](https://github.com/abaker/tasks
 [![Get it on Google Play](https://developer.android.com/images/brand/en_generic_rgb_wo_45.png)](https://play.google.com/store/apps/details?id=org.tasks)
 
 [![Make a contribution](https://pledgie.com/campaigns/24281.png?skin_name=chrome)](https://pledgie.com/campaigns/24281)
-
-Just added
